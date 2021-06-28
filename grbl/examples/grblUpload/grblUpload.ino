@@ -26,4 +26,19 @@ Released under the MIT-license. See license.txt for details.
 
 #include <grbl.h>
 
+
+/*
+#include <EEPROM.h>
+void setup() {
+  // put your setup code here, to run once:
+for (int i = 0; i < 255; i++)
+    EEPROM.write(i, i);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
+*/
+
 // Do not alter this file!

@@ -50,7 +50,7 @@
 // Axis array index values. Must start with 0 and be continuous.
 #ifdef DEFAULTS_RAMPS_BOARD
   // 4, 5 & 6 axis support only for RAMPS 1.4 (for the moment :-)...)
-  #define N_AXIS 4            // Number of axes (default is 5)
+  #define N_AXIS 3            // Number of axes (default is 5)
   #define N_AXIS_LINEAR 3     // Number of linears axis
 #else
   #define N_AXIS 3 // Number of axes = 3 if not DEFAULTS_RAMPS_BOARD
@@ -288,10 +288,10 @@
 #ifdef DEFAULTS_RAMPS_BOARD
   // Enable the following line to inverse logical behaviour (Normaly Open / Normaly Closed)
   // of some min limit switches attached.
-  //#define INVERT_MIN_LIMIT_PIN_MASK ((1<<AXIS_1) | (1<<AXIS_2) | (1<<AXIS_3))
+   #define INVERT_MIN_LIMIT_PIN_MASK ((1<<AXIS_1) | (1<<AXIS_2) /*| (1<<AXIS_3)*/)
   // Enable the following line to inverse logical behaviour (Normaly Open / Normaly Closed)
   // of some max limit switches attached.
-  //#define INVERT_MAX_LIMIT_PIN_MASK ((1<<AXIS_1) | (1<<AXIS_2) | (1<<AXIS_3))
+   #define INVERT_MAX_LIMIT_PIN_MASK (/*(1<<AXIS_1) | (1<<AXIS_2) |*/ (1<<AXIS_3))
 #endif
 
 // Inverts the spindle enable pin from low-disabled/high-enabled to low-enabled/high-disabled. Useful
